@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekrutacja - Raptors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formularz rekrutacyjny Raptors</h1>
+
+        <form id="recruitmentForm" action="add_candidate.php" method="POST">
+            <div class="form-group">
+                <label for="first_name">Imię:</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last_name">Nazwisko:</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="student_id">Numer indeksu:</label>
+                <input type="text" id="student_id" name="student_id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <button type="submit">Wyślij zgłoszenie</button>
+        </form>
+        <div style="margin-top: 20px; text-align: center;">
+            <a href="list.php" style="color: #4CAF50;">Zobacz listę kandydatów</a>
+        </div>
+    </div>
+</body>
+
+</html>
